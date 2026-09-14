@@ -39,3 +39,58 @@
   border-radius: 4px;
   cursor: pointer;
 }
+.header-logo-link {
+  display: block;
+  flex-shrink: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .header-container {
+    width: 100%;
+    padding: 12px 10px;
+    gap: 8px;
+    box-sizing: border-box;
+  }
+
+  .header-logo {
+    width: 100px;
+  }
+
+  .navigation-container {
+    flex: 1;
+    justify-content: flex-end;
+    gap: 9px;
+  }
+
+  .nav-link {
+    font-size: 12px;
+    white-space: nowrap;
+  }
+
+  .logout-button {
+    flex-shrink: 0;
+    width: auto;
+    padding: 7px 10px;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .header-logo {
+    width: 85px;
+  }
+
+  .navigation-container {
+    gap: 6px;
+  }
+
+  .nav-link {
+    font-size: 11px;
+  }
+
+  .logout-button {
+    padding: 6px 8px;
+    font-size: 11px;
+  }
+}
